@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="divby3and5()">divby3and5</button>
+    <button type="button" onclick="devby2or3()">divby2and3</button>
+
+    <script>
+        function divby3and5(){
+            var num1=Number(prompt('enter the number'))
+            if(num1%3==0 && num1%5==0){
+                alert(num1 +' devisibe by 3 and 5')
+            }
+            else{
+                alert(num1 + (' not devisible by 3 and 5'))
+            }
+        }
+        function devby2or3(){
+            var num1=Number(prompt(' enter the number'))
+            if ( num1 %2==0 || num1%3==0){
+                alert(num1+ ' devisible by 2 or 3')
+            }
+            else{
+                alert('not devisibe by 2 or 3')
+            }
+        }
+    </script>
+</body>
+</html>

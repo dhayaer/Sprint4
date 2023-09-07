@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                            // area of a rectangle
+
+
+        // function area(length, width) {
+        // var length = prompt("Enter the length of the rectangle");
+        // var width = prompt("Enter the width of the rectangle.");
+        //  return length * width;
+        // }
+        // document.writeln('The area of the rectangle is ' + area(length, width));     
+                            
+
+                            // length of the string
+        
+
+            // const str = "dhaya";
+            // const strArray = Array.from(str);
+            // const length = strArray.length;
+            // console.log(length);
+        
+    
+                            // factorial of a Number
+
+
+    //         let n = 6;
+    //         function factorial(n) {
+	//         let ans = 1;
+	//         if(n === 0)
+	// 	        return 1;
+	//         for (let i = 2; i <= n; i++)
+	// 	    ans = ans * i;
+	//             return ans;
+    // }
+
+    //         console.log(factorial(n));
+                            
+
+                            // palindrome
+            
+
+
+//             function checkPalindrome(string) {
+//             const len = string.length;
+//             for (let i = 0; i < len / 2; i++) {
+
+
+//             if (string[i] !== string[len - 1 - i]) {
+//                 return 'It is not a palindrome';
+//         }
+//     }
+//                  return 'It is a palindrome';
+// }
+//         const string = prompt('Enter a string: ');
+//         const value = checkPalindrome(string);
+//         console.log(value);
+                                // exponent
+
+                        // function Exp(){
+                        //     var num =  Number("enter a nmber")
+                        //     var pow = Number("enter a exp")
+                        //     exp = num ** pow
+                        //     console.log(exp)
+                        // }
+
+                            // Number of a letter in a string
+
+            // function nString(){
+            //     var word = prompt('enter a word')
+            //     var letter =  prompt('enter a string')
+            //     var cont = 0
+            //     for(i=0;i<word.length;i++){
+            //         if(word[i]==letter)
+            //         count ++
+            //     }
+            //     console.log(count)
+            // }
+            
+
+                //  fibonacci series
+                
+                
+            function fibonacci(){
+                var limit = Number(prompt("Enter the limit"))
+                var fibo = []
+                if(limit >= 1){
+                    fibo.push(0)
+                }
+                if(limit >= 2){
+                    fibo.push(1)
+                }
+                for (i=2;i<limit;i++){
+                  var  next = fibo[i-1]+ fibo[i-2]
+                  if( next >= limit){
+                    break
+                  }
+                  fibo.push(next)
+                }
+                console.log(fibo)
+            }
+
+
+
+    </script>
+</body>
+</html>

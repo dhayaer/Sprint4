@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add and Remove Items</title>
+</head>
+<body>
+    <h1>Add and Remove Items</h1>
+
+    <ul id="itemList">
+        <li>
+            Item 1
+            <button class="add-button" onclick="addItem(this)">Add</button>
+            <button class="remove-button" onclick="removeItem(this)">Remove</button>
+        </li>
+    </ul>
+
+    <script>
+        function addItem(button) {
+            var itemList = document.getElementById("itemList");
+            var newItem = document.createElement("li");
+            newItem.textContent = "New Item";
+            newItem.innerHTML += `
+                <button class="add-button" onclick="addItem(this)">Add</button>
+                <button class="remove-button" onclick="removeItem(this)">Remove</button>
+            `;
+            itemList.appendChild(newItem);
+        }
+
+        function removeItem(button) {
+            var itemList = document.getElementById("itemList");
+            itemList.removeChild(button.parentElement);
+        }
+    </script>
+</body>
+</html>

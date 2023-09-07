@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function countOccurrences(inputString, characterToFind) {
+  let count = 0;
+
+  for (let i = 0; i < inputString.length; i++) {
+    if (inputString.charAt(i) === characterToFind) {
+      count++;
+    }
+  }
+
+  return count;
+}
+const originalString = 'Hello, World!';
+const characterToFind = 'o';
+const occurrences = countOccurrences(originalString, characterToFind);
+
+console.log(`The character "${characterToFind}" appears ${occurrences} times in the string.`);
+
+</script>
+</body>
+</html>

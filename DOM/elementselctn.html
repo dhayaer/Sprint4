@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type = "button" onclick="change()">change</button>
+    <div id = "div">
+        <h1 id = "heading">Hiiiii</h1>
+        <p class = "para">Lorem ipsum dolor sit amet consectetur adipisicing elit. In nisi illo ad, porro aliquid atque culpa libero dolor quae error?</p>
+        <p class = "para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, voluptatibus repellendus placeat nemo consectetur tempora ad est! Esse cumque vitae, ratione quod atque nostrum ea?</p>
+        <input id = "input1" type = "text" value ="dhaya" onchange="show()">
+ </div>
+ <script>
+    var paragraph = document.getElementsByTagName("p")
+    console.log(paragraph)
+    var para = document.getElementsByTagName("para")
+    console.log(para)
+
+    var div = document.querySelector("#div")
+    console.log(div)
+    var paara = document.querySelector(".para")
+    console.log(paara)
+    function change(){
+        var head = document.getElementById("heading")
+       console.log(head.innerHTML)
+       head.innerHTML = "welcome"
+    }
+    function show(){
+        var input1 = document.querySelector("#input1")
+        console.log(input1.value)
+    }
+ </script>
+</body>
+</html>

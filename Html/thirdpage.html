@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/1b/3f/c1/f1/kj-coffee-shop-es-un.jpg);
+            text-align: center;
+            color:white;
+        }
+         .container{
+            display: flex;
+            flex-direction: row;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color:black ;
+    
+        }
+        .container div{
+            width: 250px;
+            height: 200px;
+            background-color: yellow;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .test{
+        color: red;    
+        text-align: center;
+        
+        }
+        .item1{
+            order: 3;
+            /* flex-grow: 1; */
+            flex-shrink: 2;
+        }
+        .item2{
+            order: 2;
+            /* flex-grow: 2; */
+            flex-shrink: 1;
+        }
+        .item3{
+            order: 1;
+            /* flex-grow: 1; */
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="heading">Services</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, iusto?</p>
+    <div class="container">
+        <div class="item1"><img src="coffeee.jpg" width="50px"><h1>Original Coffee</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, fuga.</p></div>
+        <div class="item2"><img src="coffeee.jpg" width="50px"><h1>20 Coffee flavours</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, animi!</p></div>
+        <div class="item3"><img src="coffeee.jpg" width="50px"><h1>pleaset abient</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime?</p></div>
+        </div>
+        </header>
+        <div class="content">
+            <h1 class="test">Testimonial</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+</body>
+</html>

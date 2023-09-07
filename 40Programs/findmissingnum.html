@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findMissingNumber(arr) {
+  const n = 100; 
+  const expectedSum = (n * (n + 1)) / 2; 
+
+
+  const actualSum = arr.reduce((total, num) => total + num, 0);
+
+
+  const missingNumber = expectedSum - actualSum;
+
+  return missingNumber;
+}
+
+const sortedArray = [1, 2, 3, /* ... */, 99, 100]; 
+const missingNumber = findMissingNumber(sortedArray);
+
+console.log(`The missing number is: ${missingNumber}`);
+    </script>
+</body>
+</html>

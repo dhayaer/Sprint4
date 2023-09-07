@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .visible{
+            background-color: antiquewhite;
+            color: aqua;
+            padding: 10px;
+            visibility: visible;
+        }
+        .hidden{
+            background-color: black;
+            color:wheat;
+            padding: 10px;
+            /* visibility: hidden; */
+            display: none;
+        }
+        .opaque{
+            background-color:red;
+            color: white;
+            padding: 10px;
+            margin: 20;
+            opacity: 1;
+        }
+        .transparent{
+            background-color:red;
+            color:black;
+            padding: 10px;
+            margin: 20px;
+            opacity: .5;
+        }
+        .gradient{
+            height: 200px;
+            width: 200px;
+            background-image: linear-gradient(45deg, red,black,yellow);
+            /* background-image: radial-gradient(circle,green,black,red); */
+            box-shadow: 10px 8px 1px green;
+
+        }
+        .overflow{
+            width: 500px;
+            height: 200px;
+            padding: 10px;
+            margin: 2px;
+            border: 1px solid blueviolet;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="visible">this is isible</div>
+    <div class="hidden">this is hidden</div>
+    <div class="visible">this is isible</div>
+    <div class="opaque">this is that
+    <p> this is a paragraph using integer</p></div>
+    <div class="transparent">that is this
+    <p>this is a oaragraph using srring</p></div>
+    <div class="gradient"></div>
+    <div class="overflow">
+        <p> laboriosam sequiur! Illum cumque nihil magnam, laborum et quoa qui eaque atque ipsum voluptatem. Consectetur incidunt rem eius  pariatur. Provident maiores eaque, ipsa omnis dolore modi ipsam fugit et excepturi tenetur recusandae eos, non corrupti placeat facilis vero! Eos blanditiis ad unde natus impedit quas! A temporibus autem sunt quos distinctio voluptatem modi ad nam recusandae aspernatur sapiente beatae, saepe molestias neque porro rerum in numquam omnis. Veniam iusto sit enim dignissimos sapiente assumenda!
+        </p>
+    </div>
+</body>
+</html>

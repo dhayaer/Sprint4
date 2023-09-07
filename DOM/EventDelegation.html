@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Delegation</title>
+</head>
+<body>
+    <h1>Event Delegation</h1>
+
+    <ul id="itemList">
+        <li>
+            Item 1
+            <button class="add-button">Add</button>
+            <button class="remove-button">Remove</button>
+        </li>
+    </ul>
+
+    <button id="addNewItem">Add New Item</button>
+
+    <script>
+        document.getElementById("itemList").addEventListener("click", function(event) {
+            if (event.target.classList.contains("add-button")) {
+                var newItem = document.createElement("li");
+                newItem.textContent = "New Item";
+                newItem.innerHTML += `
+                    <button class="add-button">Add</button>
+                    <button class="remove-button">Remove</button>
+                `;
+                event.target.parentElement.parentElement.appendChild(newItem);
+            }
+        });
+        document.getElementById("itemList").addEventListener("click", function(event) {
+            if (event.target.classList.contains("remove-button")) {
+                event.target.parentElement.parentElement.removeChild(event.target.parentElement);
+            }
+        });
+
+        document.getElementById("addNewItem").addEventListener("click", function() {
+            var newItem = document.createElement("li");
+            newItem.textContent = "New Item";
+            newItem.innerHTML += `
+                <button class="add-button">Add</button>
+                <button class="remove-button">Remove</button>
+            `;
+            document.getElementById("itemList").appendChild(newItem);
+        });
+    </script>
+</body>
+</html>
+

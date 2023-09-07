@@ -1,0 +1,45 @@
+h1{
+    color: aliceblue;
+    background-color:red;
+}
+#head1{
+    color: aqua;
+    background-color: antiquewhite;
+}
+.hd3{
+    color: chocolate;
+    text-align: end;
+    background-color: darkblue;
+    border-color: black;
+}
+div p{
+        border: 5px solid red;
+}
+p::before{
+    content: "before content";
+    font-weight: bold;
+
+}
+a{
+    color: aqua;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+a:visited{
+    color:chartreuse;
+}
+ul li:first-child{
+    color: blue;
+    font-weight: bold;
+}
+ul li::first-letter{
+    font-size: 24px;
+    color: darkseagreen;
+}
+ul li::before{
+    content:"🤞";
+    color:aqua;
+    font-weight: bold;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            height: 200px;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 80px;
+
+        }
+        header{
+            background-color: darkgray;
+            text-align: center;
+            height: 200px;
+        }
+        button{
+            background-color: blue;
+            color: white;
+        }
+        /* .row div{
+           
+            border: 1px solid rgb(199, 231, 22);
+            color:blue;
+            margin: 10px;
+             padding: 5px;
+        } */
+        .dhaya{
+            border: 1px solid  black;
+            width: 200px;
+            order: 1;
+            flex-shrink: 2;
+            width: 300px;
+        }
+        .diya{
+            order: 2;
+            flex-shrink: 1;
+            border: 1px solid  black;
+            width: 400px;
+            height: 150px;
+            
+        }
+        .adi{
+            order: 3;
+            flex-shrink: 0;
+            border: 1px solid  black;
+            width: 400px;
+        }
+        .container2 div{
+            display: flex;
+            flex-direction: row;
+            height: 400px;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            
+        }
+        .collaps{
+            /* order: 2;
+            flex-shrink: 1; */
+            width: 600px;
+            padding-left: 10px;
+        }
+        .copps{
+            width: 600px;
+            padding-left: 10px;
+            border: 6px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="heading">Welcome to our Website</h1>
+        <p>Discover amazing products and services</p>
+        <button>Get Started</button>
+    </header>
+  <div class="container">
+    <div class="dhaya">
+        <h2>Feature 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="diya">
+        <h2>Feature 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate porro accusamus ut.</p>
+    </div>
+    <div class="adi">
+        <h2>Feature 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate porro accusamus ut.</p>
+    </div>
+</div>
+<div class="container2">
+    <div class="collaps">
+        <img src="person.jpeg" width="200px" alt="">
+    </div>
+    <div class="copps">
+        <img src="person.jpeg" width="200px">
+    </div>
+</div>
+</body>
+</html>

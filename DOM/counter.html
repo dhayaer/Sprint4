@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ordered List Counter</title>
+</head>
+<body>
+    <h1>Ordered List Counter</h1>
+   
+    <ol id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+
+    <button id="countButton">Count Items</button>
+   
+    <p id="countResult">Count: <span id="itemCount">0</span></p>
+
+    <script>
+        document.getElementById("countButton").addEventListener("click", function() {
+            // Get the ordered list
+            var myList = document.getElementById("myList");
+
+            // Count the number of list items
+            var itemCount = myList.getElementsByTagName("li").length;
+
+            // Display the count
+            document.getElementById("itemCount").textContent = itemCount;
+        });
+    </script>
+</body>
+</html>

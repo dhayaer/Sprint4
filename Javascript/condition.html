@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="greaterthan5()">greaterthan</button>
+    <button type="button" onclick="oddoreven()">odd or even</button>
+    <button type="button" onclick="grade()">mark</button>
+    <button type="button" onclick="grade()">Mark</button>
+    <script>
+
+        function greaterthan5(){
+            var num= Number(prompt('enter the number'))
+            if(num1>5){
+                alert(num1 +' is greaterthan 5')
+            }
+            else if(num1==5){
+                alert(num1 +' is equal 5')
+            }
+            else{
+                alert(num1 +' is lessthan 5')
+            }
+        }
+        function oddoreven(){
+            var num=Number(prompt('enter the number'))
+            if(num1%2==0){
+                alert(num1 +'is even')
+            }
+            else{
+                alert(num1 +'is odd')
+            }
+        }
+        function grade(){
+            var mark=Number(prompt('enter your mark'))
+            if(mark <=100 && mark >=90){
+                alert(mark + 'grade A')
+            }
+            else if(mark <=89 && mark >=80){
+             alert(mark + 'grade B')
+            }
+            else if(mark <=79 && mark >=70){
+             alert(mark + 'grade C')
+             }
+            else if(mark <=69 && mark >=60){
+             alert(mark + 'grade D')
+            } 
+             else if(mark <=59 && mark >=0){
+             alert(mark + 'grade failed')
+            }
+            else{
+             alert('invalid input')
+            }
+            }
+            function switchgrade(){
+                var mark=Number(prompt('enter your mark'))
+                var grade
+                switch(true){
+                    case mark>=90 && mark<=100 :
+                        grade='A'
+                        break;
+                     case mark>=89 && mark<=80 :
+                        grade='B'
+                        break;
+                     case mark>79 && mark<=70 :
+                        grade='C'
+                        break;
+                     case mark>=69 && mark<=60 :
+                        grade='D'
+                        break;
+                    case mark>=90 && mark<=100 :
+                        grade='failed'
+                         break;
+                    default:
+                        grade='invalid'                                
+                                                  
+                 }
+                 alert(grade)
+            }
+    </script>
+
+</body>
+</html>

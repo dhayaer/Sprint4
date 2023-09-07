@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color:blue;
+            display: flex;
+            flex-direction: row;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .container div{
+            width: 300px;
+            height: 200px;
+            background-color: blueviolet;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .item1{
+            order: 3;
+            /* flex-grow: 1; */
+            flex-shrink: 2;
+        }
+        .item2{
+            order: 2;
+            /* flex-grow: 2; */
+            flex-shrink: 1;
+        }
+        .item3{
+            order: 1;
+            /* flex-grow: 1; */
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="item1"><h1>section1</h1></div>
+    <div class="item2"><h1>section2</h1></div>
+    <div class="item3"><h1>section3</h1></div>
+    <!-- <div class="item1"><h1>section1</h1></div>
+    <div class="item2"><h1>section2</h1></div>
+    <div class="item3"><h1>section3</h1></div>
+    <div class="item2"><h1>section2</h1></div>
+    <div class="item3"><h1>section3</h1></div>
+    <div class="item2"><h1>section2</h1></div>
+    <div class="item3"><h1>section3</h1></div>
+    <div class="item2"><h1>section2</h1></div>
+    <div class="item3"><h1>section3</h1></div> -->
+    </div>
+</body> 
+</html>

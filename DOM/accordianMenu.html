@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accordion Menu</title>
+    <style>
+        .accordion-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Accordion Menu</h1>
+
+    <div class="menu-item" onclick="toggleAccordion('item1')">Menu Item 1</div>
+    <div id="item1-content" class="accordion-content">
+        Content for Menu Item 1 goes here.
+    </div>
+
+    <div class="menu-item" onclick="toggleAccordion('item2')">Menu Item 2</div>
+    <div id="item2-content" class="accordion-content">
+        Content for Menu Item 2 goes here.
+    </div>
+
+    <div class="menu-item" onclick="toggleAccordion('item3')">Menu Item 3</div>
+    <div id="item3-content" class="accordion-content">
+        Content for Menu Item 3 goes here.
+    </div>
+
+    <script>
+        function toggleAccordion(itemId) {
+            var content = document.getElementById(itemId + "-content");
+            var allContent = document.getElementsByClassName("accordion-content");
+            for (var i = 0; i < allContent.length; i++) {
+                allContent[i].style.display = "none";
+            }
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

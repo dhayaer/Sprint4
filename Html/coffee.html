@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: 1fr auto;
+            grid-template-rows: 1fr 100px 10fr;
+            min-height: 50vh;
+        }
+        header{
+            background-image:url("https://thumbs.dreamstime.com/b/traditional-coffee-cup-heart-shaped-steam-rustic-wood-70228609.jpg");
+            background-size: cover;
+            text-align: center;
+            grid-row-start: 1;
+            width: 1500px;
+            color:white;
+            }
+            ul{
+                background-color:rgba(0,0,0,0.5);
+                padding: 10px;
+                background-size: cover;
+                text-align: right;
+                color:white;
+            }
+            li{
+                display: inline;
+                padding: 0px 10px 0px 10px;
+                height: fit-content;
+            }
+            .name{
+                text-align: left;
+            }
+            div{
+                text-align: center;
+                color: beige;
+            }
+            .pin{
+                color: black;
+            }
+            .div4{
+                color: black;
+                grid-row-start: 2;
+                left: -300px;
+                position: relative;
+            }
+            .about{
+                color: pink;
+                size: 10px;
+                font-style: bold;
+                grid-column-start: 2;
+                grid-row-start: 2;
+
+            }
+            .hai{
+              grid-row-start: 2;
+              position: relative;
+              left: -300px;
+              width: 50 px;
+              height: 50px;
+            }
+            button{
+                color: black;
+                background-color: darkolivegreen;
+            }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <ul>
+        <h1 class="name">GrandCoffee</h1>
+        <li>About</li>
+        <li>gallery</li>
+        <li>contact us</li>
+    </ul>
+    <div>
+        <h1 class="pin">Outstanding</h1>
+        <h1>CoffeeShope</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum qui ratione eos iure adipisci voluptatibus sapiente facilis corrupti possimus id temporibus debitis quod, sed in? Quis explicabo minus neque sint.</p>
+    <button>Read More</button>
+    </header>
+    </div>
+    </header>
+    <div class="div4">
+        <h1 class="about">About us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id amet asperiores quas ipsum adipisci iste dolorum <br />officia vitae beatae magnam minus modi officiis, doloremque delectus!</p>
+        <button>Read More </button>
+    </div>
+    <div class="hai">
+        <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="150">
+    </div>
+ 
+</body>
+</html>

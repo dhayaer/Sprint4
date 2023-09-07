@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var global = 'global variable'
+        function scope(){
+            x=10
+            var y=10
+            var local = 'local variable'
+            console.log(local)
+            console.log(global,'global from inside')
+            console.log('value x from inside',x)
+            console.log('value y from inside',y)
+
+        }
+        scope()
+        // console.log(local)
+        console.log(global,'global from outside')
+        console.log('value x from outside',x)
+        console.log('value y from outside',y)
+    </script>
+</body>
+</html>
