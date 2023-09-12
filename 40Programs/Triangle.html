@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function classifyTriangle(side1, side2, side3) {
+            if (side1 === side2 && side2 === side3) {
+                return "Equilateral Triangle";
+            } else if (side1 === side2 || side1 === side3 || side2 === side3) {
+                return "Isosceles Triangle";
+            } else {
+                return "Scalene Triangle";
+            }
+        }
+        const sideA = 5;
+        const sideB = 5;
+        const sideC = 5;
+
+        const triangleType = classifyTriangle(sideA, sideB, sideC);
+        console.log(`The triangle is a ${triangleType}`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function updateArray(arr) {
+    const updatedArray = [];
+
+    if (arr.length === 0) {
+        return updatedArray;
+    }
+
+    updatedArray.push(arr[0] * arr[1]);
+
+    for (let i = 1; i < arr.length - 1; i++) {
+        updatedArray.push(arr[i - 1] * arr[i + 1]);
+    }
+
+    if (arr.length > 1) {
+        updatedArray.push(arr[arr.length - 2] * arr[arr.length - 1]);
+    }
+
+    return updatedArray;
+}
+
+const inputArray = [1, 2, 3, 4, 5];
+const updated = updateArray(inputArray);
+console.log("Updated Array:", updated);
+    </script>
+</body>
+</html>

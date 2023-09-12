@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findMissingNumber(arr1, arr2) {
+    for (let i = 0; i < arr1.length; i++) {
+        if (!arr2.includes(arr1[i])) {
+            return arr1[i];
+        }
+    }
+    return null; 
+}
+const array1 = [1, 2, 3, 4, 5];
+const array2 = [2, 3, 1, 0, 5];
+const missingNumber = findMissingNumber(array1, array2);
+
+if (missingNumber !== null) {
+    console.log(`The number ${missingNumber} is not present in the second array.`);
+} else {
+    console.log("All numbers from the first array are present in the second array.");
+}
+    </script>
+</body>
+</html>

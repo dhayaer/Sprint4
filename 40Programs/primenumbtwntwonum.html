@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isPrime(number) {
+  if (number <= 1) {
+    return false;
+  }
+
+  if (number <= 3) {
+    return true;
+  }
+
+  if (number % 2 === 0 || number % 3 === 0) {
+    return false;
+  }
+
+  for (let i = 5; i * i <= number; i += 6) {
+    if (number % i === 0 || number % (i + 2) === 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+function displayPrimesInRange(start, end) {
+  if (start <= 1 || start >= end) {
+    console.log("Invalid input range.");
+    return;
+  }
+
+  console.log(`Prime numbers between ${start} and ${end}:`);
+
+  for (let i = start; i <= end; i++) {
+    if (isPrime(i)) {
+      console.log(i);
+    }
+  }
+}
+
+const startRange = 1; 
+const endRange = 100; 
+displayPrimesInRange(startRange, endRange);
+    </script>
+</body>
+</html>

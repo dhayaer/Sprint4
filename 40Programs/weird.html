@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Given an integer, , perform the following conditional actions:
+● If n is odd, print Weird
+● If n is even and in the inclusive range of 2 to 5, print Not Weird
+● If n is even and in the inclusive range of 6 to 20, print Weird
+● If n is even and greater than 20, print Not Weird -->
+    <script>
+        const number = Number(prompt('enter the number')) ;
+        function checkNumber(n) {
+    if (n % 2 === 1) {
+        console.log("Weird");
+    } else if (n % 2 === 0 && n >= 2 && n <= 5) {
+        console.log("Not Weird");
+    } else if (n % 2 === 0 && n >= 6 && n <= 20) {
+        console.log("Weird");
+    } else if (n % 2 === 0 && n > 20) {
+        console.log("Not Weird");
+    }
+}
+checkNumber(number);
+
+    </script>
+</body>
+</html>

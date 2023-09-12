@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const number1 = Number(prompt('enter first number'));
+        const number2 = Number(prompt('enter second number'));
+        const gcd = findGCD(num1, num2);
+        function findLCM(num1, num2) {
+
+            const product = num1 * num2;
+            const lcm = product / gcd;
+
+            return lcm;
+        }
+
+        function findGCD(num1, num2) {
+            while (num2 !== 0) {
+                const temp = num2;
+                num2 = num1 % num2;
+                num1 = temp;
+            }
+            return num1;
+        }
+
+
+
+
+        const lcm = findLCM(number1, number2);
+
+        console.log(`LCM of ${number1} and ${number2} is ${lcm}`);
+    </script>
+</body>
+</html>

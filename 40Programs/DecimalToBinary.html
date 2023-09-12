@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function decimalToBinary(decimalNumber) {
+            if (isNaN(decimalNumber)) {
+                return "Invalid input. Please provide a valid number.";
+            }
+
+            if (decimalNumber === 0) {
+                return "0"; 
+            }
+
+            return decimalNumber.toString(2);
+        }
+        const decimalNumber = 42; 
+        const binaryNumber = decimalToBinary(decimalNumber);
+        console.log(`Binary representation of ${decimalNumber} is: ${binaryNumber}`);
+    </script>
+</body>
+
+</html>

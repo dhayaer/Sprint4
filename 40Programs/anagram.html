@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function areAnagrams(str1, str2) {
+    str1 = str1.replace(/\s/g, "").toLowerCase();
+    str2 = str2.replace(/\s/g, "").toLowerCase();
+
+    if (str1.length !== str2.length) {
+        return false;
+    }
+
+    const charCount1 = {};
+    const charCount2 = {};
+
+    for (let char of str1) {
+        charCount1[char] = (charCount1[char] || 0) + 1;
+    }
+
+    for (let char of str2) {
+        charCount2[char] = (charCount2[char] || 0) + 1;
+    }
+    for (let char in charCount1) {
+        if (charCount1[char] !== charCount2[char]) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+const string1 = "flow";
+const string2 = "wolf";
+
+if (areAnagrams(string1, string2)) {
+    console.log(`"${string1}" and "${string2}" are anagrams.`);
+} else {
+    console.log(`"${string1}" and "${string2}" are not anagrams.`);
+}
+    </script>
+</body>
+</html>

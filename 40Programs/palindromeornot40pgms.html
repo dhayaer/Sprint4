@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+      <!-- Write a program to check if a positive number is a palindrome or not.
+ -->
+        <script>
+            const inputNumber = Number(prompt('enter number')) 
+          const result = isPalindrome(inputNumber);
+        function isPalindrome(number) {
+            if (number < 0) {
+              return false;
+            }
+          
+            let originalNumber = number;
+            let reversedNumber = 0;
+          
+            while (number > 0) {
+              const lastDigit = number % 10;
+              reversedNumber = reversedNumber * 10 + lastDigit;
+              number = Math.floor(number / 10);
+            }
+          
+            return originalNumber === reversedNumber;
+          }
+          
+          
+          
+          
+          if (result) {
+            console.log(`${inputNumber} is a palindrome.`);
+          } else {
+            console.log(`${inputNumber} is not a palindrome.`);
+          }
+          </script>
+    </body>
+    </html>

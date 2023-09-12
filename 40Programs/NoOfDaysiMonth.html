@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+function getDaysInMonth(month, year) {
+
+    month -= 1;
+    const date = new Date(year, month + 1, 0);
+    return date.getDate();
+}
+
+const inputMonth = parseInt(prompt("Input a month number (1-12):"));
+const inputYear = parseInt(prompt("Input a year:"));
+
+if (inputMonth >= 1 && inputMonth <= 12) {
+    const daysInMonth = getDaysInMonth(inputMonth, inputYear);
+    alert(`There is ${daysInMonth} days in month and ${inputMonth} of year ${inputYear}.`);
+} else {
+    alert("Invalid month input. Please enter a month number between 1 and 12.");
+}
+   </script>
+</body>
+</html>

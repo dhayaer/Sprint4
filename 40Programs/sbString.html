@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const inputString = prompt("Hello, World!");
+        function extractSubstring(s, start, end) {
+    if (start < 0 || start >= s.length || end <= start || end > s.length) {
+        return "Invalid indices";
+    }
+
+    let result = "";
+
+    for (let i = start; i < end; i++) {
+        result += s[i];
+    }
+
+    return result;
+}
+
+
+const startIndex = 0; 
+const endIndex = 5;
+
+const extractedSubstring = extractSubstring(inputString, startIndex, endIndex);
+console.log("Extracted Substring:", extractedSubstring);
+    </script>
+</body>
+</html>
